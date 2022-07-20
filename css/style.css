@@ -1,0 +1,101 @@
+/*
+The image in our description does not look very appealing.
+Let's change that and also make our form stick to the bottom of the page, irrespective of its height!
+
+Tasks:
+1. Make the image in the section element float to the left, with the text wrapping around it.
+2. Give the image a 10px margin to the right, so there is a gap between it and the text.
+3. For our buy section: make its position fixed to the bottom right of the page. Give it a width of 100% so that it spans the entire width of the page and set the box-sizing property to border-box, so that the size does not overflow the page.
+*/
+
+form{
+    display: flex;
+}
+
+.form-section{
+    flex: 1;
+}
+
+input[type='text']{
+    padding: 2px;
+    text-align: center;
+}
+
+input[type='number']{
+    width: 50px;
+}
+
+input[type='button']{
+    background-color: #2493df;
+    font-weight: bold;
+    font-size: 16px;
+    color: white;
+    border: none;
+    height: 40px;
+    width: 100%;
+}
+
+table{
+    border-collapse: collapse;
+}
+
+td, th{
+    border: 1px solid black;
+    padding: 10px;
+}
+
+th{
+    background-color: #2493df;
+    color: white;
+}
+
+ul{
+    list-style: square inside none;
+    padding-left: 30px;
+}
+
+strong{
+    color: #2493df;
+}
+
+footer{
+    font-size: 14px;
+    color: #595959;
+    text-align: center;
+    margin-top: 10px;
+}
+
+h1{
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin: 10px 0px;
+}
+
+label{
+    font-size: 16px;
+    font-weight: 700;
+}
+
+section{
+    padding: 10px;
+    background-color: white;
+    float: left;
+}
+
+body{
+    background-color: #e0e0e0;
+}
+
+img{
+    margin-right: 10px;
+}
+
+#buy{
+    background-color: #687373;
+    color: #fcfcfc;
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    width: 100%;
+    box-sizing: border-box;
+}
